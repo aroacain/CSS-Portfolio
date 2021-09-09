@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+}
+
+/* navigation bar */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: gray;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 20px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/*Welcome section*/
+
+#welcome-section {
+  position: relative;
+  margin-top: 50px;
+  height: 100vh;
+}
+
+#welcome-background {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+#welcome-text {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  color: white;
+  top: 30%;
+  left: 5%;
+}
+
+#welcome-headline-1 {
+  font-size: 3rem;
+}
+
+#welcome-headline-2 {
+  font-size: 2rem;
+}
+
+/*Projects section*/
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 3.5rem;
+}
+
+h3, a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.project-title:hover {
+  color: gray;
+}
+
+#projects-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2% 10%;
+}
+
+.project-tile {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.project-tile img{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: top;
+ }
+
+ /*Contact me*/
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2% 10%;
+}
+
+.profile-icon {
+  width: 200px;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+ /*Media Queries*/
+
+ @media (max-width: 1000px) {
+   #projects-container {
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .contact-container {
+     flex-direction: column;
+   }
+ }
